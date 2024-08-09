@@ -1,0 +1,314 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css");
+
+:root {
+    --background-color: #ffffff;
+    --text-color: #282828;
+    --text-error: #ff0000;
+    --border-table: #68a0dd;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    background: var(--background-color);
+    color: var(--text-color);
+}
+
+html {
+    font-size: calc(8px + 0.5vw);
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+main {
+    flex-grow: 1;
+    margin: 5px 2px 5px 2px;
+}
+
+header, footer {
+    vertical-align: middle;
+    color: white;
+    background-color: #00469c;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+header {
+    min-height: 120px;
+}
+
+footer {
+    visibility: hidden;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ Tableau
+*/
+
+table {
+    border: 1px solid var(--border-table);
+    padding: 5px;
+}
+
+tr {
+    line-height: 25px;
+}
+
+thead {
+
+    font-weight: bold;
+    border: 1px solid var(--border-table);
+}
+
+tbody {
+    /*  background-color: #E0E0E0; */
+    border: 1px solid var(--border-table);
+}
+
+th {
+    line-height: 40px;
+    padding: 5px;
+}
+
+td {
+    padding: 5px;
+}
+
+/* lien */
+
+a, a:hover, a:visited, a:active {
+    text-decoration: none;
+    color : var(--text-color)
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Supprime les espaces vides sous les images */
+    margin: 0 auto; /* Centre les images horizontalement si nécessaire */
+}
+
+
+
+/* les champs de saisie */
+
+fieldset {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+legend {
+    width: auto;
+    padding: 0 5px;
+    margin-bottom: 0;
+    font-size: inherit;
+    line-height: inherit;
+    border-bottom: none;
+    text-align: left;
+    float: none !important;
+}
+
+/* Style pour la bordure de la case à cocher */
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: #1d1d1d 1px solid;
+    width: 25px;
+    height: 25px;
+    border-radius: 5px; /* Pour une bordure arrondie */
+    outline: none;
+}
+
+/* Style pour la coche à l'intérieur de la case à cocher */
+input[type="checkbox"]:checked {
+    background-color: #81ed81;
+    border: #1d1d1d 1px solid;
+}
+
+/* Style pour un champ de recherche */
+
+input[type=text].recherche {
+    margin: 15px;
+    border: 1px solid;
+    border-radius: 30px;
+    background: url(search.svg) no-repeat ;
+    background-size: 16px 18px;
+    background-position: 98% 50%;
+    min-width: 250px;
+}
+
+input[type=text].recherche:focus {
+    font-weight: bold;
+    border: 1px solid dodgerblue;
+}
+
+.obligatoire:after {
+    color: red;
+    content: ' *';
+}
+
+.erreur {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: var(--text-error);
+}
+
+.form-control, .form-select {
+    border: 1px solid dodgerblue;
+    border-radius: 5px;
+    outline: 0;
+    box-shadow: 0 0 0 0;
+}
+
+.form-control:disabled, .form-select:disabled {
+    border: 0 solid;
+    border-radius: 8px;
+}
+
+.form-control:focus {
+    border: 2px solid dodgerblue;
+    border-radius: 10px;
+    outline: 0;
+    box-shadow: 0 0 0 0;
+}
+
+.form-select:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0;
+}
+
+input::placeholder {
+    font-size: 0.8rem;
+}
+
+
+
+
+/* RETIRER LES FLÈCHES DES INPUTS NUMBER */
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+/* Chrome */
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* une case à cocher mise en forme par bootstrap : le label est toujours à droite */
+
+
+.formulaire {
+    margin: auto;
+    padding: 10px;
+    background-color: white;
+    color: darkblue;
+    border-radius: 10px;
+    border: darkblue 1px solid;
+}
+
+
+.login {
+    background-image: url('login.png');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: 16px 16px;
+    background-position: 1% 50%;
+    cursor: pointer;
+    padding-left: 25px;
+}
+
+.password {
+    background-image: url('pwd.png');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: 16px 16px;
+    background-position: 1% 50%;
+    cursor: pointer;
+    padding-left: 25px;
+}
+
+.validated::after {
+    content: ' ✓';
+    color: #5cb85c !important;
+}
+
+.validated {
+    color: #5cb85c !important;
+}
+
+.border-right {
+    border-right: 1px solid #ddd;
+}
+
+
+/* Style pour la zone déposer d'un upload par glisser déposer */
+.upload {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    border: 2px dashed #aaa;
+    margin : 10px;
+    color: #666666;
+    background-color: #F0F0F2;
+    text-align: center;
+    height: 200px;
+    width: 200px;
+}
+
+.upload .content {
+    position: absolute; /* Positionnement absolu pour le contenu */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centrage absolu */
+}
+
+.upload:hover {
+    background-color : #C0C0C0;
+    cursor :  pointer
+}
+
+.upload img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: auto;
+}
+
+/* Styles pour le smartphone */
+@media only screen and (max-width: 767px) {
+    .masquer {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+

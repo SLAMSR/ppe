@@ -1,0 +1,11 @@
+AuthUserFile /home/verghote/www/backoffice/.htpasswd
+AuthUserFile i:/ppe/backoffice/.htpasswd
+AuthName "Accès administration"
+AuthType Basic
+require user admin
+
+# protection du fichier .htpasswd
+<Files ".htpasswd">
+    Require all denied
+</Files>
+

@@ -1,0 +1,42 @@
+<div class="d-flex justify-content-around">
+    <a style="color : #1d1d1d " href="/membre/profil" class=" my-3">
+        <i class="p-2 bi bi-person"></i>Profil
+    </a>
+    <a style="color : #1d1d1d" href="/membre/password" class=" my-3">
+        <i class="p-2 bi bi-bag-check"></i>Mot de passe
+    </a>
+    <a style="color : red;" href="/membre/email" class="my-3">
+        <i class="p-2 bi bi-envelope"></i>Email
+    </a>
+    <a style="color : #1d1d1d " href="/membre/photo" class=" my-3">
+        <i class="p-2 bi bi-person"></i>Photo
+    </a>
+</div>
+<div class="formulaire" style="width: 42rem">
+    <div id="msg" class="m-1 erreur"></div>
+    <div class="row text-center">
+    </div>
+    <label for="emailActuel" class="col-form-label">E-mail actuel : </label>
+    <input type="text"
+           id="emailActuel"
+           readonly
+           class="">
+
+    <label for="email" class="obligatoire col-form-label">
+        Nouvelle adresse e-mail
+    </label>
+    <input type="text"
+           placeholder="indiquez ici votrenouvelle adresse e-mail"
+           id="email"
+           class="form-control "
+           pattern="^[0-9a-zA-Z]([\-_\.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([\-_\.]?[0-9a-zA-Z])*[\.][a-zA-Z]{2,4}$"
+
+           autocomplete="off">
+
+    <div class="row justify-content-center  my-3 pl-3 pr-3">
+        <button id='btnValider' style="width: 300px;" class="btn btn btn-danger text-white ">Modifier</button>
+    </div>
+</div>
+
+
+

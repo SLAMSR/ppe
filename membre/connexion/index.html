@@ -1,0 +1,21 @@
+<div class="formulaire" style="max-width: 24rem">
+    <div id="msg" class="m-1 erreur"></div>
+    <label for="login" class="col-form-label obligatoire">Login</label>
+    <input id="login" type="text"
+           required
+           class="login form-control"
+           placeholder="Première lettre de votre prénom suivie de votre nom"
+           autocomplete="off">
+    <div class="d-flex align-items-center justify-content-between">
+        <label for="password" class="col-form-label obligatoire">Mot de passe </label>
+        <i id="passwordImg" class="bi bi-eye-slash p-1"></i>
+    </div>
+    <input id="password" type="password"
+           required
+           placeholder="Mot de passe"
+           class="password form-control">
+
+    <div class="text-center mt-3 pl-3 pr-3">
+        <button id='btnValider' class="btn btn-primary w-100 mb-3">Connexion</button>
+    </div>
+</div>

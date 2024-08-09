@@ -1,0 +1,43 @@
+<div class="d-flex justify-content-around">
+    <a style="color : #1d1d1d " href="/membre/profil" class=" my-3">
+        <i class="p-2 bi bi-person"></i>Profil
+    </a>
+    <a style="color : #1d1d1d" href="/membre/password" class=" my-3">
+        <i class="p-2 bi bi-bag-check"></i>Mot de passe
+    </a>
+    <a style="color : #1d1d1d" href="/membre/email" class="my-3">
+        <i class="p-2 bi bi-envelope"></i>Email
+    </a>
+    <a style="color : red " href="/membre/photo" class=" my-3">
+        <i class="p-2 bi bi-person"></i>Photo
+    </a>
+</div>
+<div class="formulaire" style="max-width: 42rem">
+
+    <div id="msg" class="m-1 erreur"></div>
+
+    <div class="row">
+        <div class="col-12 col-sm-6">
+            <div id="cible" class="upload" style="height: 210px; width: 210px; font-size: 6rem;"></div>
+            <input type="file" id="fichier" accept=".jpg, .png, .gif" style='display:none'>
+            <button id="btnSupprimer"
+                  data-bs-toggle="tooltip"
+                  data-bs-trigger="hover"
+                  data-bs-title ="Supprimer ma photo"
+                    class = "btn btn-sm btn-danger text-white"
+                    style="display: none; width: 210px ">Supprimer ma photo</button>
+        </div>
+        <div class="col-12 col-sm-6">
+            <div style="font-size: 0.8rem; font-style: italic; margin-top:30px">
+                Faites glisser votre photo dans la zone encadrée ou cliquez sur la zone pour sélectionner un fichier.
+                <br><br>
+                La photo sera automatiqument redimensionner en 200 * 200. Si le résultat n'est pas conforme à vos
+                attentes, utilisez le lien suivant pour redimensionner préalablement votre photo :
+                <a href="https://resizeyourimage.com/FR/" target="_blank">Redimensionner ma photo</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

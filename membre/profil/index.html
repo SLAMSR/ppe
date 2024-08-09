@@ -1,0 +1,52 @@
+<div class="d-flex justify-content-around">
+    <a style="color : red " href="/membre/profil" class=" my-3">
+        <i class="p-2 bi bi-person"></i>Profil
+    </a>
+    <a style="color : #1d1d1d" href="/membre/password" class=" my-3">
+        <i class="p-2 bi bi-bag-check"></i>Mot de passe
+    </a>
+    <a style="color : #1d1d1d" href="/membre/email" class="my-3">
+        <i class="p-2 bi bi-envelope"></i>Email
+    </a>
+    <a style="color : #1d1d1d " href="/membre/photo" class=" my-3">
+        <i class="p-2 bi bi-person"></i>Photo
+    </a>
+</div>
+<div class="formulaire" style="width: 42rem">
+    <div class="form-group row">
+        <label for="nom" class="col-sm-5 col-form-label">Nom et prénom</label>
+        <div class="col-sm-7">
+            <input id="nom" type="text" class="form-control-plaintext" readonly>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="email" class="col-sm-5 col-form-label">Email </label>
+        <div class="col-sm-7">
+            <input id="email" type="text" class="form-control-plaintext" readonly>
+        </div>
+    </div>
+
+    <div class="fst-italic text-decoration-underline">
+        Informations affichées dans l'annuaire, consultable uniquement par les membres
+    </div>
+    <div class="form-group row mt-3">
+        <label for="telephone" class="col-sm-5 col-form-label">Téléphone</label>
+        <input id="telephone"
+               style="width: 130px"
+               class="form-control"
+               type="text"
+               placeholder="Non renseigné"
+               maxlength="10"
+               minlength="10"
+               pattern="^0[1-9]\d{8}$">
+
+    </div>
+    <div class="form-group row mt-3">
+        <label for="autMail" class="col-sm-5 col-form-label">Affichage de mon email</label>
+        <div class="col-sm-7">
+            <input type="checkbox" class="form-check-input" id="autMail"/>
+        </div>
+    </div>
+    <button id="btnModifier" class="w-100 btn btn-sm btn-primary">Enregistrer les modifications</button>
+</div>
+

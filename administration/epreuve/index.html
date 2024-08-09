@@ -1,0 +1,66 @@
+<div class="formulaire" style="width:50rem">
+    <div style='display:flex; align-items: center;'>
+        <label style='flex: 0 0 auto;margin-right: 10px;' for="id">Sélectionnez l'épreuve</label>
+        <select style='flex:1' class="form-select" id="id" style="width: 150px;"></select>
+    </div>
+    <div id="msg" class="m-1 erreur"></div>
+
+    <label for="description" class="obligatoire col-form-label">Description</label>
+    <textarea id='description'></textarea>
+
+    <div class="row mt-3">
+        <div class="col-sm-12 col-md-4 ">
+            <label class='col-form-label' for="dateOuverture">Début inscription </label>
+            <input id='dateOuverture' type="date"
+                   style="width: 160px;"
+                   class="form-control">
+            <div id="msgdateOuverture" class='messageErreur'></div>
+        </div>
+        <div class="col-sm-12 col-md-4 ">
+            <label class='col-form-label' for="dateFermeture">Fin inscription</label>
+            <input id='dateFermeture' type="date"
+                   style="width: 160px;"
+                   class="form-control">
+            <div id="msgdateFermeture" class='messageErreur'></div>
+        </div>
+        <div class="col-md-4 col-12">
+            <label for="date" class="obligatoire col-form-label">Date de l'épreuve</label>
+            <input id="date"
+                   type='date'
+                   style="width: 160px;"
+                   required
+                   class="form-control">
+        </div>
+    </div>
+
+    <label class='col-form-label' for="urlInscription">Url pour s'inscrire</label>
+    <input id='urlInscription'
+           style="font-size: 0.8rem;"
+           type="text"
+           class="form-control"
+           minlength='10'
+           maxlength='150'
+           autocomplete="off">
+
+    <label class='col-form-label' for="urlInscrit">Url pour voir les inscrits</label>
+    <input id='urlInscrit'
+           style="font-size: 0.8rem;"
+           type="text"
+           class="form-control "
+           minlength='10'
+           maxlength='150'
+           autocomplete="off">
+
+    <div class="d-flex justify-content-evenly">
+        <button id="btnModifier" class="btn btn-danger mt-3">Modifier</button>
+        <a href="index.php" class="btn btn-secondary mt-3">
+            <i class="bi bi-arrow-90deg-up"></i>
+            Annuler
+        </a>
+    </div>
+</div>
+
+
+
+
+
